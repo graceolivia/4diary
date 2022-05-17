@@ -5,4 +5,3 @@ class WelcomeController < ApplicationController
     render json: "{'name':'jables'}"
   end
 end
-
