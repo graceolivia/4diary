@@ -52,6 +52,8 @@ jobs:
           bundler-cache: true
       # Add or replace any other lints here
       - name: Install Files
-        run: bundle
+        run: gem install rubocop
+      - name: Install Files
+        run: gem install rubocop-rails
       - name: Lint Ruby files
         run: rubocop
