@@ -1,0 +1,26 @@
+inherit_from: .rubocop_todo.yml
+
+require: rubocop-rails
+
+AllCops:
+  Exclude:
+    - bin/**/*
+    - ciscripts/**/*
+    - db/**/*
+    - scripts/**/*
+    - tmp/**/*
+    - vendor/**/*
+  NewCops: enable
+  SuggestExtensions: false
+
+Rails:
+  Enabled: true
+
+Rails/UnknownEnv:
+  Environments:
+    - development
+    - production
+    - test
+
+Layout/FirstHashElementIndentation:
+  EnforcedStyle: consistent
