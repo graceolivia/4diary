@@ -61,6 +61,7 @@ group :development do
 
   gem 'rubocop'
   gem 'rubocop-rails'
+  gem 'factory_bot'
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
@@ -74,6 +75,9 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'webdrivers'
+  gem 'factory_bot'
 end
 
 gem 'bundler-audit'
+
+gem 'jsonapi-resources'
