@@ -11,6 +11,8 @@ gem 'rails', '~> 7.0.2', '>= 7.0.2.4'
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 
+gem 'rack-cors'
+
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.1'
 
@@ -59,6 +61,7 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem 'web-console'
 
+  gem 'factory_bot'
   gem 'rubocop'
   gem 'rubocop-rails'
 
@@ -77,3 +80,5 @@ group :test do
 end
 
 gem 'bundler-audit'
+
+gem 'jsonapi-resources'
