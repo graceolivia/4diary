@@ -41,7 +41,7 @@ jobs:
       - name: Run tests
         run: bin/rake
       - name: Install
-        run: bundle install
+        run: gem install rspec-rails
       - name: Run rspec
         run: rspec
 
