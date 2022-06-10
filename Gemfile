@@ -61,7 +61,7 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem 'web-console'
 
-  gem 'factory_bot'
+
   gem 'rubocop'
   gem 'rubocop-rails'
 
@@ -79,6 +79,13 @@ group :test do
   gem 'webdrivers'
 end
 
+group :test, :development do
+  gem 'factory_bot'
+  gem 'rspec-rails'
+end
+
 gem 'bundler-audit'
 
 gem 'jsonapi-resources'
+
+gem 'devise'
