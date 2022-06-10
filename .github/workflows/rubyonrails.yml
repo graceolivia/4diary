@@ -40,8 +40,12 @@ jobs:
       # Add or replace test runners here
       - name: Run tests
         run: bin/rake
-      - name: Install
+      - name: Install rspec
         run: gem install rspec-rails
+      - name: Install devise
+        run: gem install devise
+      - name: Install factory bot
+        run: gem install factory_bot
       - name: Run rspec
         run: rspec
 
